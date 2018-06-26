@@ -1,9 +1,15 @@
-<h1>Welcome To heroes dashboard</h1>
-<div>
-  Name : {{hero.name}}<br>
-  Id : {{hero.id}}
+<h1>My Heroes</h1>
+<div *ngFor=" let hero of heroes" (click)="selected(hero)">
+  <b>Name:</b><span>{{hero.name}}</span><br>
+  <b>ID:</b><span>{{hero.id}}</span>
 </div>
-<div>
+<!-- <div>
   <label>name:</label>
   <input [(ngModel)]="hero.name" placeholder="name">
-</div>
+</div> -->
+
+
+<div *ngIf="selectedHero">
+    <b>Name:</b><span>{{selectedHero.name}}</span><br>
+    <b>ID:</b><span>{{selectedHero.id}}</span>
+  </div>
