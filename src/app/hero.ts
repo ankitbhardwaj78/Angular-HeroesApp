@@ -1,4 +1,4 @@
 export class Hero{
-    private id:number;
-    private name:string;
+    id:number;
+    name:string;
 }
