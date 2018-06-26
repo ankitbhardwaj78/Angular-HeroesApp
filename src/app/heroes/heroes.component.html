@@ -1,4 +1,9 @@
-<p>
-  {{hero.name}}
-  {{hero.id}}
-</p>
+<h1>Welcome To heroes dashboard</h1>
+<div>
+  Name : {{hero.name}}<br>
+  Id : {{hero.id}}
+</div>
+<div>
+  <label>name:</label>
+  <input [(ngModel)]="hero.name" placeholder="name">
+</div>
